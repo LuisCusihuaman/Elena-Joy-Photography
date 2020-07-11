@@ -152,36 +152,7 @@ nav {
 	left: 40%;
 }
 
-/*ANIMATIONS */
-
-@keyframes opening {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes plant-entrance {
-	from {
-		transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
-	}
-	to {
-		transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
-	}
-}
-@keyframes plant-shake {
-	from {
-		transform: rotateZ(-5deg);
-	}
-	to {
-		transform: rotateZ(0deg);
-	}
-}
-
-.burger,
-.menu-check {
+.burger {
 	display: none;
 }
 
@@ -322,6 +293,33 @@ input:focus {
 	border: 4px solid rgb(148, 148, 197);
 }
 
+/*ANIMATIONS */
+
+@keyframes opening {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes plant-entrance {
+	from {
+		transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+	}
+	to {
+		transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
+	}
+}
+@keyframes plant-shake {
+	from {
+		transform: rotateZ(-5deg);
+	}
+	to {
+		transform: rotateZ(0deg);
+	}
+}
+
 @media screen and (max-width: 842px) {
 	.hero {
 		width: 100%;
@@ -329,7 +327,7 @@ input:focus {
 	.hero-introduction p {
 		padding: 5rem 3rem;
 	}
-	/* BURGER THING */
+	/* BURGER NAV */
 	.burger {
 		position: relative;
 		display: block;
